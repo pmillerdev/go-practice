@@ -4,7 +4,7 @@ import (
 	"fmt"
 )
 
-func collections() {
+func main() {
 	// arrays
 	var arr [3]int
 	arr[0] = 1

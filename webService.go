@@ -1,18 +1,13 @@
 package main
 
 import (
-	"fmt"
+	"net/http"
 
-	"github.com/pmillerdev/test-mod/models"
+	"github.com/pmillerdev/go-practice/controllers"
 )
 
 // Web service
 func main() {
-	// use User from the models package
-	u := models.User{
-		ID:        2,
-		FirstName: "Frank",
-		LastName:  "Furter",
-	}
-	fmt.Println(u)
+	controllers.RegiserControllers()
+	http.ListenAndServe(":3000", nil)
 }
