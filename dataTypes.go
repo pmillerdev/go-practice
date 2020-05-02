@@ -14,7 +14,7 @@ const (
 	fourth = 2 << iota
 )
 
-func main() {
+func dataTypes() {
 	// int and reassignment
 	var i int
 	i = 2
